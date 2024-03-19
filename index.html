@@ -11,6 +11,9 @@
   <!-- vue.js -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
+  <!-- axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
   <link rel="stylesheet" href="CSS/style.css">
   <title>Document</title>
 </head>
@@ -18,6 +21,7 @@
 
   <div id="app">
 
+    <h2 v-for="email in emails">{{email}}</h2>
   </div>
   
   <script src="js/script.js"></script>
