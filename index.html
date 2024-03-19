@@ -21,7 +21,7 @@
 
   <div id="app">
 
-    <h2 v-for="element in emails">{{element}}</h2>
+    <h2 v-if="emails.length === 10" v-for="element in emails">{{element}}</h2>
     <button @click=" clearPage(), getApi()" class="btn-danger ">10 email</button>
   </div>
   
