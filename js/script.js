@@ -16,11 +16,14 @@ createApp({
       axios.get(this.apiUrl)
       .then((res)=>{
         const newMail = res.data.response;
-        this.emails.push(newMail);
         console.log(newMail, this.emails);
+        this.emails.push(newMail);
       });
     };
-    
+   },
+
+   clearPage(){
+    this.emails= []
    }
 
   },
